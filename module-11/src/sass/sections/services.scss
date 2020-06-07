@@ -1,0 +1,53 @@
+.services {
+  padding-top: 52px;
+  padding-bottom: 50px;
+}
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  &-item {
+    width: 382px;
+    margin-bottom: 98px;
+    padding-left: 80px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: 20px 0;
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+    &-title {
+      font-size: 14px;
+      color: $secondary-color;
+      font-family: $main-font;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    &-description {
+      font-size: 15px;
+      line-height: 24px;
+      color: $third-color;
+      font-family: $secondary-font;
+      font-weight: 400;
+    }
+    &_alarm {
+      background-image: url('../images/icon/ALARM.svg');
+    }
+    &_line-graph {
+      background-image: url('../images/icon/LINE GRAPH.svg');
+    }
+    &_computer {
+      background-image: url('../images/icon/COMPUTER _ OK.svg');
+    }
+    &_book {
+      background-image: url('../images/icon/BOOK 2.svg');
+    }
+    &_home {
+      background-image: url('../images/icon/HOME.svg');
+    }
+    &_box {
+      background-image: url('../images/icon/BOX.svg');
+    }
+  }
+}
