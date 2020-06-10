@@ -19,15 +19,54 @@
       ),
       url('../images/baner/baner@2x.jpg');
   }
+  &__navigation {
+    margin-bottom: 180px;
+  }
+  &__title {
+    text-align: center;
+    font-size: 150px;
+    font-family: $main-font;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 114px 0;
+    &_first-line {
+      text-transform: none;
+      display: block;
+      font-size: 72px;
+      font-family: 'Kaushan Script';
+      font-weight: 400;
+      margin-bottom: 44px;
+    }
+    &_second-line {
+      display: block;
+      margin-bottom: 8px;
+    }
+  }
+  &__modal-link {
+    font-size: 14px;
+    font-family: $main-font;
+    font-weight: 700;
+    color: $main-color;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid $main-color;
+    padding: 10px 28px;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    &:hover {
+      border: 7px solid $main-color;
+      transition-property: all;
+      transition-duration: 0.2s;
+      transition-timing-function: linear;
+    }
+  }
 }
-
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}
-.header__navigation {
-  margin-bottom: 180px;
 }
 .navigation-wrapper-left {
   display: flex;
@@ -84,7 +123,6 @@
     }
   }
 }
-
 .navigation-list-right {
   display: flex;
   width: 10%;
@@ -107,46 +145,5 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-  }
-}
-
-.header__title {
-  text-align: center;
-  font-size: 150px;
-  font-family: $main-font;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 0 0 114px 0;
-  &_first-line {
-    text-transform: none;
-    display: block;
-    font-size: 72px;
-    font-family: 'Kaushan Script';
-    font-weight: 400;
-    margin-bottom: 44px;
-  }
-  &_second-line {
-    display: block;
-    margin-bottom: 8px;
-  }
-}
-.header__modal-link {
-  font-size: 14px;
-  font-family: $main-font;
-  font-weight: 700;
-  color: $main-color;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0);
-  border: 3px solid $main-color;
-  padding: 10px 28px;
-  transition-property: all;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
-  &:hover {
-    border: 7px solid $main-color;
-    transition-property: all;
-    transition-duration: 0.2s;
-    transition-timing-function: linear;
   }
 }
